@@ -1,0 +1,11 @@
+{
+  "esversion": 8,
+  "strict": true,
+  "node": true,
+  "undef": true,
+  "unused": true,
+  "eqeqeq": true,
+  "shadow": false,
+  "lastsemic": false,
+  "quotmark": "double"
+}

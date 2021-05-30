@@ -1,4 +1,5 @@
-// https://github.com/motdotla/dotenv
+"use strict";
+
 require("dotenv").config();
 const axios = require("axios");
 const fs = require("fs");
@@ -20,7 +21,7 @@ async function main() {
   // https://stackoverflow.com/questions/4810841/pretty-print-json-using-javascript
   const prettyPrintedResponse = JSON.stringify(response.data, null, 2);
   fs.writeFileSync("data/response.json", prettyPrintedResponse);
-  // console.log(response);
+  console.log("wrote response to data/response.json");
 }
 
 main();
